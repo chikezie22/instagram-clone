@@ -8,11 +8,11 @@ const PageLayout = ({children}) => {
   return (
     <Flex>
         {/* sidebar on the left  */}
-    {pathName !== '/auth' && <Box w={{base:'70px', md:'240px'}}>
+    {pathName !== '/auth' && <Box w={{base:'70px', lg:'240px'}}>
         <Sidebar/>
     </Box>}
         {/* the page content on the right */}
-        <Box flex={1} w={{base:'calc(100% -70px)', md:'calc(100% -240px)'}}>{children}</Box>
+        <Box flex={1} w={{base:'calc(100% -70px)', lg:'calc(100% -240px)'}}>{children}</Box>
     </Flex>
   )
 }
